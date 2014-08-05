@@ -22,10 +22,10 @@ describe "User Pages" do
         it {should have_selector('div.pagination')}
 
         it "should list each user" do
-          User.all.each do |user|
-            expect(page).to have_selector('li', text: user.name)
-        end
-      end
+              User.all.each do |user|
+                expect(page).to have_selector('li', text: user.name)
+              end
+            end
     end
     
     describe "delete links" do
